@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>江西服装学院入党流程全攻略</title>
+<style>
+  :root{
+    --red:#c8152b; --red-soft:#fbe9ec; --red-deep:#8e0f1e;
+    --gold:#c79a3a; --ink:#1f2329; --muted:#6b7280; --line:#e6e8eb;
+    --bg:#f6f7f9; --card:#ffffff; --ok:#2f9e57; --warn:#d98a00;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  header{background:linear-gradient(135deg,var(--red-deep),var(--red));color:#fff;padding:34px 24px;text-align:center}
+  header h1{font-size:26px;letter-spacing:1px}
+  header p{opacity:.92;margin-top:8px;font-size:14px}
+  .wrap{max-width:1040px;margin:0 auto;padding:24px 18px 60px}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px 0 28px}
+  .tab{padding:9px 16px;border:1px solid var(--line);background:var(--card);border-radius:24px;cursor:pointer;font-size:14px;color:var(--muted);transition:.2s}
+  .tab.active{background:var(--red);color:#fff;border-color:var(--red)}
+  .panel{display:none}
+  .panel.active{display:block;animation:fade .25s}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+  /* 纯 CSS 标签页：不依赖 JavaScript，任何预览环境（含禁用脚本的沙箱 iframe）都可切换 */
+  .tabinput{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+  .wrap:has(#t-flow:checked) label[for="t-flow"],
+  .wrap:has(#t-detail:checked) label[for="t-detail"],
+  .wrap:has(#t-time:checked) label[for="t-time"],
+  .wrap:has(#t-tuiyou:checked) label[for="t-tuiyou"],
+  .wrap:has(#t-material:checked) label[for="t-material"],
+  .wrap:has(#t-quiz:checked) label[for="t-quiz"],
+  .wrap:has(#t-qa:checked) label[for="t-qa"],
+  .wrap:has(#t-staff:checked) label[for="t-staff"]{background:var(--red);color:#fff;border-color:var(--red)}
+  .wrap:has(#t-flow:checked) #flow,
+  .wrap:has(#t-detail:checked) #detail,
+  .wrap:has(#t-time:checked) #time,
+  .wrap:has(#t-tuiyou:checked) #tuiyou,
+  .wrap:has(#t-material:checked) #material,
+  .wrap:has(#t-quiz:checked) #quiz,
+  .wrap:has(#t-qa:checked) #qa,
+  .wrap:has(#t-staff:checked) #staff{display:block;animation:fade .25s}
+  h2.sec{font-size:19px;border-left:5px solid var(--red);padding-left:12px;margin:26px 0 16px}
+  h3{font-size:15px;color:var(--red-deep);margin:14px 0 6px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+  .stage{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:12px;padding:16px}
+  .stage .no{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;background:var(--red);color:#fff;border-radius:50%;font-size:13px;font-weight:700}
+  .stage h4{margin:10px 0 4px;font-size:15px}
+  .stage .t{font-size:12px;color:var(--gold);font-weight:600}
+  .stage ol{margin:8px 0 0 18px;font-size:13px;color:var(--muted)}
+  .tl{position:relative;margin-left:14px;padding-left:22px;border-left:2px solid var(--line)}
+  .tl .it{position:relative;margin:14px 0}
+  .tl .it::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;background:var(--red);border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px var(--red)}
+  .tl .it b{font-size:14px}.tl .it span{font-size:13px;color:var(--muted);display:block}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+  th{background:var(--red-soft);color:var(--red-deep)}
+  .cond{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .cond .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .cond .c .tag{display:inline-block;font-size:12px;background:var(--gold);color:#fff;border-radius:6px;padding:2px 8px;margin-bottom:6px}
+  details.acc{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:8px 0;overflow:hidden}
+  details.acc summary{padding:13px 16px;cursor:pointer;font-weight:600;font-size:14px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  details.acc summary::-webkit-details-marker{display:none}
+  details.acc summary::after{content:"+";color:var(--red);font-size:18px}
+  details.acc[open] summary::after{content:"−"}
+  details.acc .a{padding:0 16px 14px;font-size:13px;color:var(--muted)}
+  .acc{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:8px 0;overflow:hidden}
+  .search{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:10px;font-size:14px;margin:6px 0 14px}
+  .note{background:var(--red-soft);border-left:4px solid var(--red);padding:12px 16px;border-radius:8px;font-size:13px;color:var(--red-deep);margin:14px 0}
+  .btnred{margin-top:10px;padding:9px 18px;background:var(--red);color:#fff;border:none;border-radius:24px;cursor:pointer;font-size:14px}
+  .btnred:hover{background:var(--red-deep)}
+  .pill{display:inline-block;font-size:12px;padding:3px 9px;border-radius:20px;background:#eef2ff;color:#3b4cca;margin:2px}
+  .pill.ok{background:#e7f6ee;color:var(--ok)}
+  .pill.no{background:#fdeaea;color:var(--red)}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+  .quiz label{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:8px;margin:8px 0;cursor:pointer;font-size:14px}
+  .quiz label:hover{border-color:var(--red)}
+  .res{margin-top:14px;padding:14px;border-radius:10px;font-size:14px;display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>江西服装学院 · 入党流程全攻略</h1>
+  <p>从递交入党申请书到转为正式党员 · 五阶段 25 步骤 · 含校党委组织部与团委推优真实政策</p>
+</header>
+<div class="wrap">
+  <input type="radio" name="ptab" id="t-flow" class="tabinput" checked>
+  <input type="radio" name="ptab" id="t-detail" class="tabinput">
+  <input type="radio" name="ptab" id="t-time" class="tabinput">
+  <input type="radio" name="ptab" id="t-tuiyou" class="tabinput">
+  <input type="radio" name="ptab" id="t-material" class="tabinput">
+  <input type="radio" name="ptab" id="t-quiz" class="tabinput">
+  <input type="radio" name="ptab" id="t-qa" class="tabinput">
+  <input type="radio" name="ptab" id="t-staff" class="tabinput">
+  <div class="tabs">
+    <label class="tab" for="t-flow">五阶段流程</label>
+    <label class="tab" for="t-detail">阶段详解</label>
+    <label class="tab" for="t-time">时间线</label>
+    <label class="tab" for="t-tuiyou">推优条件</label>
+    <label class="tab" for="t-material">材料清单</label>
+    <label class="tab" for="t-quiz">资格自检</label>
+    <label class="tab" for="t-qa">常见问题</label>
+    <label class="tab" for="t-staff">教职工专属</label>
+  </div>
+
+  <!-- 流程图 -->
+  <div class="panel active" id="flow">
+    <h2 class="sec">发展党员五阶段流程</h2>
+    <div class="flow">
+      <div class="stage"><span class="no">1</span><h4>申请入党</h4><div class="t">约 1 个月内</div>
+        <ol><li>递交入党申请书</li><li>党组织 1 个月内派人谈话</li></ol></div>
+      <div class="stage"><span class="no">2</span><h4>入党积极分子</h4><div class="t">≥ 1 年</div>
+        <ol><li>推优/党员推荐</li><li>支委会决定·报党委备案</li><li>指定培养联系人</li><li>每半年考察一次</li></ol></div>
+      <div class="stage"><span class="no">3</span><h4>发展对象</h4><div class="t">3—6 个月</div>
+        <ol><li>支委会讨论·报上级党委同意</li><li>公示 ≥5 工作日（校内一般 7 天）</li><li>公示无异议方可列为发展对象</li><li>入党介绍人·政治审查·集中培训</li></ol></div>
+      <div class="stage"><span class="no">4</span><h4>预备党员接收</h4><div class="t">1—3 个月</div>
+        <ol><li>支委会审查·党委预审</li><li>填志愿书·支部大会表决</li><li>党委派人谈话·审批</li><li>报再上一级备案</li></ol></div>
+      <div class="stage"><span class="no">5</span><h4>转正</h4><div class="t">1 年</div>
+        <ol><li>编入支部·入党宣誓</li><li>继续教育考察</li><li>转正申请·支部大会</li><li>党委审批·材料归档</li></ol></div>
+    </div>
+    <div class="note">⚠️ 任何环节断档都会拉长周期。从递交申请书到转为正式党员通常需 <b>2.5—3 年</b>甚至更久。</div>
+  </div>
+
+  <!-- 阶段详解 -->
+  <div class="panel" id="detail">
+    <h2 class="sec">五阶段 25 步骤详解</h2>
+    <div class="card">
+      <h3>阶段一 · 申请入党</h3>
+      <p>① 自愿向所在单位党组织（一般为党支部）递交入党申请书。② 党组织收到后 <b>1 个月内</b>派人（书记/副书记/组织委员）同申请人谈话，了解经历、入党动机与家庭情况，介绍党的基本知识。</p>
+      <h3>阶段二 · 入党积极分子确定与培养（≥1 年）</h3>
+      <p>③ 经党员推荐、群团组织推优产生人选，支委会研究决定。④ 报上级党委备案。⑤ 指定 <b>1—2 名正式党员</b>作培养联系人。⑥ 培养考察 <b>1 年以上</b>，党支部每半年考察一次。</p>
+      <h3>阶段三 · 发展对象确定与考察</h3>
+      <p>⑦ 对经过 <b>1 年以上</b>培养考察、基本具备党员条件的积极分子，听取党小组、培养联系人、党员和群众意见，支委会研究讨论。⑧ <b>报上级党委同意拟列为发展对象，并公示 ≥5 个工作日（校内一般公示 7 天）；公示结果不影响发展入党的，才可以列为发展对象。</b>⑨ 确定 <b>2 名正式党员</b>作入党介绍人（受警告、严重警告、撤销党内职务处分在影响期内的不宜担任；受留党察看处分未恢复权利的不能担任）。⑩ 政治审查：同本人谈话、查档、了解情况、必要函调/外调，<b>形成结论性材料</b>；含网络行为表现、家庭主要成员和重要社会关系政治情况；未经政审或政审不合格不能发展。⑪ 短期集中培训 <b>≥3 天或 24 学时</b>（一般线下），除特殊情况外未经培训不能发展。</p>
+      <h3>阶段四 · 预备党员接收</h3>
+      <p>⑫ 支委会严格审查，报具有审批权限的基层党委预审。⑬ 预审合格发《入党志愿书》；<b>发展对象未来 3 个月内将离开学校/单位的，一般不办理接收预备党员手续</b>。⑭ 在介绍人指导下填写志愿书。⑮ <b>经预审合格的，应当在 1 个月内提交支部党员大会讨论</b>；到会有表决权党员须超过应到半数，无记名投票，赞成超应到有表决权党员半数方通过。⑯ 党委指派委员/组织员谈话。⑰ 党委 <b>3 个月内</b>审批（最长 6 个月），并注明预备期起止时间。⑱ 报再上一级党委组织部门备案。</p>
+      <p class="note">⚠️ <b>审批权限</b>：预备党员必须由<b>党委</b>审批，<b>党总支不能审批</b>（只审议）；高校学院多为党总支，审批权一般在学校党委。毕业学年（尤其最后一学期）通常不再发展，需倒推至大三结束前完成发展对象环节。</p>
+      <h3>阶段五 · 预备党员教育考察与转正（1 年）</h3>
+      <p>⑲ 编入党支部党小组。⑳ 面向党旗宣誓（批复后 1 个月内）。㉑ 继续教育考察（<b>预备期 1 年，自支部党员大会通过其为预备党员之日算起</b>）。㉒ 预备期满后提出书面转正申请（学校要求预备期内书面思想汇报 4 次；离校三个月以上在外实习/提前就业者须由所在单位出具现实表现证明）。㉓ 支部征求党小组、党员和群众意见，支部委员会审查，支部大会讨论表决。㉔ <b>党委 3 个月内审批转正</b>；党龄自预备期满转为正式党员之日算起。㉕ 材料归入本人人事档案；无人事档案的建立党员档案。</p>
+    </div>
+  </div>
+
+  <!-- 时间线 -->
+  <div class="panel" id="time">
+    <h2 class="sec">关键时间节点</h2>
+    <div class="tl">
+      <div class="it"><b>递交申请书</b><span>起点 · 本人手写，含对党的认识/为什么入党/今后打算</span></div>
+      <div class="it"><b>党组织谈话</b><span>收到申请书后 1 个月内</span></div>
+      <div class="it"><b>确定为入党积极分子</b><span>推优/党员推荐 → 支委会决定 → 报党委备案</span></div>
+      <div class="it"><b>积极分子培养考察</b><span>≥ 1 年，每半年考察一次，每季度一篇思想汇报</span></div>
+      <div class="it"><b>列为发展对象 + 公示</b><span>支委会讨论 → 报上级党委同意 → 公示 ≥ 5 个工作日（校内 7 天）→ 公示无异议方可列为发展对象</span></div>
+      <div class="it"><b>政治审查 + 集中培训</b><span>函调/外调并形成结论性材料；培训 ≥ 3 天或 24 学时</span></div>
+      <div class="it"><b>支部大会接收预备党员</b><span>预审合格后 <b>1 个月内</b>召开；无记名投票表决</span></div>
+      <div class="it"><b>党委审批</b><span>收到决议后 3 个月内（最长 6 个月）· 党总支不能审批</span></div>
+      <div class="it"><b>入党宣誓</b><span>批复后 1 个月内</span></div>
+      <div class="it"><b>预备期 · 转正</b><span>预备期 1 年（自支部大会通过之日算起）→ 转正申请（期满后）→ 支部大会 → <b>党委 3 个月内审批</b></span></div>
+    </div>
+  </div>
+
+  <!-- 推优条件 -->
+  <div class="panel" id="tuiyou">
+    <h2 class="sec">推优入党核心条件（28 岁以下团员）</h2>
+    <div class="note">推优是高校 28 周岁以下青年入党主要渠道。以下为江西服装学院团委通知口径；<b>教职工</b>一般通过"党员推荐、群团组织推优"产生人选，不套用"每班≤2名"学生名额。</div>
+    <h3>推优对象须同时满足</h3>
+    <p><span class="pill">年龄 18—28 周岁</span><span class="pill">已递交入党申请书且注册团籍</span><span class="pill">一般团龄 ≥ 1 年</span><span class="pill">推优前 1 个月已交申请书</span></p>
+    <div class="cond">
+      <div class="c"><span class="tag">政治表现</span><p>入党动机端正，对党有认识，共产主义理想信念坚定，自觉申请入党。</p></div>
+      <div class="c"><span class="tag">品德修养</span><p>践行社会主义核心价值观，品德优良；处分未撤销前不予推荐。</p></div>
+      <div class="c"><span class="tag">学习表现</span><p>自入学以来不及格科目 <b>不超过 2 门</b>（含补考已通过）。</p></div>
+      <div class="c"><span class="tag">集体意识</span><p>热心集体事务，积极参加社会实践、公益活动表现突出者优先。</p></div>
+    </div>
+    <h3>名额与程序</h3>
+    <p>每个班级 <b>不超过 2 名</b>。流程：党支部 10月10日前反馈申请书名单 → 团支书征求班主任/辅导员意见 → 团支部委员会酝酿 → 团支部大会无记名投票（过半数）→ 公示 ≥5 工作日 → 报上级团组织审核 → 向党支部推荐。</p>
+    <p style="font-size:13px;color:var(--muted)">团中央实施办法补充：推优比例一般不超过团支部团员 20%，每次推荐有效期 2 年；28—35 周岁青年入党一般应听取团组织意见。</p>
+  </div>
+
+  <!-- 材料清单 -->
+  <div class="panel" id="material">
+    <h2 class="sec">入党全流程材料清单</h2>
+    <h3>第一环节 · 确定入党积极分子</h3>
+    <table>
+      <tr><th>材料</th><th>要点</th></tr>
+      <tr><td>入党申请书</td><td>本人手写；对党的认识 / 为什么入党 / 今后打算；党的性质宗旨按党章准确叙述</td></tr>
+      <tr><td>个人自传</td><td>基本情况、学习工作经历、家庭与主要社会关系；注意时间衔接与证明人</td></tr>
+      <tr><td>学习党的基本知识心得体会</td><td>可从党史角度或结合当前形势撰写</td></tr>
+      <tr><td>推优推荐表（28岁以下备）</td><td>栏目完整；团支部意见具体（开会时间、应到/实到人数、投票结果）</td></tr>
+      <tr><td>支部委员会决议 + 入党积极分子登记表</td><td>书面决议；报组织部备案（纸质+电子版）</td></tr>
+      <tr><td>入党积极分子考察登记表</td><td>每季度考察一次；超一年另附季度表现</td></tr>
+      <tr><td>档案封面</td><td>建立入党积极分子档案</td></tr>
+    </table>
+    <h3>第二环节 · 报批发展对象</h3>
+    <table>
+      <tr><th>材料</th><th>要点</th></tr>
+      <tr><td>个人思想汇报</td><td>自批准为积极分子起，每三个月至少一篇</td></tr>
+      <tr><td>培训考试结业证</td><td>入党积极分子培训结业（或复印件）</td></tr>
+      <tr><td>荣誉证书复印件 / 学习成绩证明</td><td>佐证现实表现</td></tr>
+      <tr><td>外调函</td><td>未婚函调父母，已婚含配偶</td></tr>
+      <tr><td>民主测评小结 / 群众座谈会记录 / 支部鉴定</td><td>原始记录，格式规范、内容真实</td></tr>
+      <tr><td><b>支部关于列为发展对象的报告及横表</b></td><td>纸质件 + 电子版，按学校规定样文填写</td></tr>
+    </table>
+    <h3>第三环节 · 报批预备党员</h3>
+    <table>
+      <tr><th>材料</th><th>要点</th></tr>
+      <tr><td><b>支部关于报批预备党员的报告及横表</b></td><td>纸质件 + 电子版，按规定样文填写</td></tr>
+      <tr><td>档案封面 + 档案</td><td>填写完整后提交</td></tr>
+      <tr><td>报批发展对象批复复印件</td><td>附入档案</td></tr>
+      <tr><td><b>支部政审结论</b></td><td>政治审查形成的结论性材料</td></tr>
+      <tr><td><b>公示登记表</b></td><td>填写完整准确；<b>公示七天后</b>召开支部大会讨论</td></tr>
+      <tr><td>《入党志愿书》</td><td>个人、支部填写栏目完整、准确、真实</td></tr>
+    </table>
+    <h3>第四环节 · 报批预备党员转正</h3>
+    <table>
+      <tr><th>材料</th><th>要点</th></tr>
+      <tr><td><b>支部报告及横表</b></td><td>按规定样文填写</td></tr>
+      <tr><td><b>预备期内本人书面思想汇报 4 次</b></td><td>按期撰写、手写</td></tr>
+      <tr><td><b>转正申请</b></td><td>格式、内容符合要求，<b>时间应在预备期满后</b></td></tr>
+      <tr><td><b>单位现实表现证明</b></td><td>离校三个月以上、在外实习或提前就业者，由所在单位党组织（或行政部门）出具</td></tr>
+      <tr><td>支部大会决议</td><td>填写规范、表述准确（填入志愿书相应栏目）</td></tr>
+    </table>
+    <div class="note">⚠️ 所有材料须本人手写、严禁抄袭或 AI 代写；时间须递进衔接，不得"推优"早于"递交申请书"、"转正申请"早于"预备期满"。写作骨架见本 Skill 的 <b>references/writing.md</b>。</div>
+  </div>
+
+  <!-- 资格自检 -->
+  <div class="panel" id="quiz">
+    <h2 class="sec">资格自检（能不能入党 / 还差哪一步）</h2>
+    <div class="quiz">
+      <label><input type="checkbox" id="q1"> 我已年满 18 周岁，是中国公民</label>
+      <label><input type="checkbox" id="q2"> 我承认党的纲领和章程，愿意参加党的组织、执行决议、交纳党费</label>
+      <label><input type="checkbox" id="q3"> 我已向本单位党组织递交入党申请书（或准备递交）</label>
+      <label><input type="checkbox" id="q4"> 我是共青团员且团籍在校（28岁以下适用）</label>
+      <label><input type="checkbox" id="q5"> 我无违纪处分、现实表现良好、群众基础好</label>
+      <button class="btnred" onclick="check()">查看结果</button>
+    </div>
+    <div class="res" id="res"></div>
+    <h3>判定规则（不依赖脚本，可自行对照）</h3>
+    <table>
+      <tr><th>你的情况</th><th>结论</th></tr>
+      <tr><td>①②未同时满足</td><td>暂不具备党章基本资格，先补足条件</td></tr>
+      <tr><td>①②满足，③未满足</td><td>可以开始：先向本单位党组织递交本人手写申请书</td></tr>
+      <tr><td>⑤未满足</td><td>需先整改：处分未撤销、表现不佳者不予推荐</td></tr>
+      <tr><td>④未满足</td><td>走党员推荐 / 群团推优渠道；未满 28 岁非团员建议先入团</td></tr>
+      <tr><td>①—⑤全满足</td><td>具备推优条件，可在班级推优（每班 ≤2 名）中争取列为入党积极分子</td></tr>
+    </table>
+  </div>
+
+  <!-- 常见问题 -->
+  <div class="panel" id="qa">
+    <h2 class="sec">常见问题（本地搜索）</h2>
+    <input class="search" id="qsearch" placeholder="搜索关键词，如：推优、志愿书、转正、培训…">
+    <div id="qalist">
+      <details class="acc"><summary>我不是团员，能入党吗？</summary><div class="a">28 周岁以下青年入党一般应从团员中发展，非团员很难获得发展名额，建议先入团。28 周岁以上不必是团员，可通过党员推荐、群团组织推优产生人选。</div></details>
+      <details class="acc"><summary>入党申请书能 AI 代写吗？</summary><div class="a">不能。入党申请书、思想汇报、自传等材料须本人手写，严禁抄袭或 AI 代写。本攻略仅提供写作结构与规范要点。</div></details>
+      <details class="acc"><summary>从申请到转正要多久？</summary><div class="a">通常需要 2.5—3 年甚至更久：积极分子培养 ≥1 年，发展对象 3—6 个月，预备党员接收 1—3 个月，预备期 1 年。</div></details>
+      <details class="acc"><summary>推优名额怎么算？</summary><div class="a">江西服装学院学生每班不超过 2 名；团中央实施办法规定推优比例一般不超过团支部团员 20%，每次推荐有效期 2 年。</div></details>
+      <details class="acc"><summary>集中培训必须参加吗？</summary><div class="a">是。发展对象须接受短期集中培训，一般不少于 3 天或 24 学时；未经培训（除特殊情况）不能发展入党。</div></details>
+      <details class="acc"><summary>党委审批有期限吗？</summary><div class="a">有。党委须在收到支部大会决议后 3 个月内审批，遇特殊情况最长不超过 6 个月。</div></details>
+      <details class="acc"><summary>我是教职工，走哪条渠道？</summary><div class="a">教职工同样走五阶段流程，一般通过"党员推荐、群团组织推优"产生人选，由所在党支部委员会研究决定并报上级党委备案，不套用学生"每班≤2名"名额口径。</div></details>
+    </div>
+  </div>
+
+  <!-- 教职工专属 -->
+  <div class="panel" id="staff">
+    <h2 class="sec">教职工专属流程（在职教工渠道）</h2>
+    <div class="note">⚠️ 江西服装学院教职工走<b>党员推荐 + 群团组织推优</b>渠道，<b>不套用学生"每班≤2名"名额</b>，也<b>不考核"不及格科目"</b>。核心看师德师风、本职工作实绩与群众公认。机关部门教职工按所在部门归属机关第一至第八党支部（名录见本页下方）。</div>
+
+    <h3>与学生渠道的核心区别</h3>
+    <table>
+      <tr><th>维度</th><th>学生</th><th>教职工</th></tr>
+      <tr><td>产生方式</td><td>团支部推优大会（28岁以下团员）</td><td>党员推荐 + 群团组织推优</td></tr>
+      <tr><td>名额</td><td>每班 ≤ 2 名</td><td>无"每班名额"，成熟一个发展一个</td></tr>
+      <tr><td>核心考核</td><td>学业（不及格≤2门）、青年大学习</td><td>师德师风、本职工作业绩、服务奉献</td></tr>
+      <tr><td>民主测评</td><td>同学测评</td><td>同事 / 教职工测评</td></tr>
+      <tr><td>材料归档</td><td>学生档案</td><td>本人事档案</td></tr>
+    </table>
+
+    <h3>教职工入党积极分子额外条件</h3>
+    <div class="cond">
+      <div class="c"><span class="tag">申请时长</span><p>已递交书面入党申请书 <b>满 6 个月以上</b>。</p></div>
+      <div class="c"><span class="tag">师德师风</span><p>师德良好、能完成本职工作；<b>无学术不端、无违纪受处分</b>（一票否决）。</p></div>
+      <div class="c"><span class="tag">工作表现</span><p>积极参加集体活动，较好完成学校 / 单位交办任务。</p></div>
+      <div class="c"><span class="tag">群众基础</span><p>作风正派、同事关系融洽；民主测评赞成率须 > 50%。</p></div>
+    </div>
+
+    <h3>阶段二 · 确定入党积极分子（教职工侧）</h3>
+    <div class="tl">
+      <div class="it"><b>党员推荐</b><span>党支部组织党员推荐，实到 ≥ 2/3，赞成率 > 50%</span></div>
+      <div class="it"><b>群团组织推优</b><span>工会 / 团委等群团组织推荐（填写推荐表）</span></div>
+      <div class="it"><b>支委会研究决定</b><span>综合党团推荐，防简单以票取人</span></div>
+      <div class="it"><b>报上级党委备案 + 公示</b><span>公示 ≥ 5 个工作日</span></div>
+      <div class="it"><b>指定培养联系人</b><span>1—2 名正式党员，每半年考察一次，≥1 年</span></div>
+    </div>
+
+    <h3>机关党支部归属（向哪个支部递交申请）</h3>
+    <table>
+      <tr><th>支部</th><th>组成部门</th></tr>
+      <tr><td>机关第一党支部</td><td>党政办、质评中心、双创学院</td></tr>
+      <tr><td>机关第二党支部</td><td>党委组织部（党校）、纪检监察室、工会、妇联</td></tr>
+      <tr><td>机关第三党支部</td><td>教务处、科技产业处、学科建设与发展规划处等（党员 19 人：正式 18、预备 1）</td></tr>
+      <tr><td>机关第四党支部</td><td>学工处、校团委、保卫处</td></tr>
+      <tr><td>机关第五党支部</td><td>宣传部（新闻中心）</td></tr>
+      <tr><td>机关第六党支部</td><td>招生处、就业处</td></tr>
+      <tr><td>机关第七党支部</td><td>网络与信息化管理中心、图书馆、计划财务处、资产处、后勤服务中心</td></tr>
+      <tr><td>机关第八党支部</td><td>人事处、教师工作部、教师发展中心</td></tr>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">各学院另设党委 / 党总支及教工、学生党支部，学院教师向本学院教工党支部递交，不走机关支部。支部设置随机构调整变动，递交前请向本部门确认。</p>
+
+    <h3>给你的具体建议</h3>
+    <div class="card">
+      <p>① <b>向谁交申请书</b>：按上表向本部门归属的机关党支部递交，须本人手写；不确定归属先向本部门确认。</p>
+      <p>② <b>突出优势</b>：结合本职岗位写实绩——教学岗突出立德树人，管理岗突出服务师生与专项任务，技术 / 教辅岗突出保障支撑、参与重大建设与应急响应表现。</p>
+      <p>③ <b>师德红线</b>：高校教师入党师德师风一票否决；网络行为表现也纳入政治审查（2026细则第十六条）。</p>
+      <p>④ <b>主动靠拢</b>：定期向培养联系人 / 支部汇报思想，积极参加党内活动，争取党员推荐与群众公认。</p>
+      <p>⑤ <b>时间预期</b>：递交到转正通常 2.5—3 年，尽早递交、尽早进入培养考察。</p>
+    </div>
+    <p style="font-size:13px;color:var(--muted)">完整教职工流程、材料清单与时限见本 Skill 的 <b>references/staff.md</b>。28 周岁以下青年教师一般仍从团员中发展；28 周岁以上已退团者直接走党员推荐 / 群团推优。</p>
+  </div>
+
+  <footer>江西服装学院党建网 dw.jift.edu.cn · 依据《中国共产党发展党员工作细则》（2026-05-11 发布）与校党委组织部材料要求编制 · 最后核验 2026-08-29 · 具体政策以党委组织部最新通知为准</footer>
+</div>
+
+<script>
+  /* 标签页主用纯 CSS（:has + radio）实现，此处 JS 仅作为老旧浏览器的降级兜底 */
+  (function(){
+    var tabs=document.querySelectorAll('.tab');
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(){
+        var key=(t.getAttribute('for')||'').replace(/^t-/,'');
+        tabs.forEach(function(x){x.classList.remove('active')});
+        t.classList.add('active');
+        document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+        var panel=document.getElementById(key);
+        if(panel) panel.classList.add('active');
+      });
+    });
+    var s=document.getElementById('qsearch');
+    if(s){
+      s.oninput=function(e){
+        var v=e.target.value.trim().toLowerCase();
+        document.querySelectorAll('#qalist .acc').forEach(function(a){
+          a.style.display = (!v || (a.innerText||a.textContent||'').toLowerCase().indexOf(v)>-1) ? '' : 'none';
+        });
+      };
+    }
+  })();
+  function check(){
+    const r=document.getElementById('res');
+    if(!r) return;
+    const a=['q1','q2','q3','q4','q5'].map(id=>{const e=document.getElementById(id);return !!e&&e.checked;});
+    const base=a[0]&&a[1];
+    let msg="";
+    if(!base){ msg="<b style='color:#c8152b'>暂不能</b>：你尚未满足党章基本资格（须年满18岁中国公民、承认纲领章程、愿意参加组织并交纳党费）。先补上这两点。"; }
+    else if(!a[2]){ msg="<b style='color:#d98a00'>可以开始</b>：基本资格满足，但你还<b>没递交入党申请书</b>。现在就能向本单位党支部递交（须本人手写），之后 1 个月内党组织会找你谈话。距转正约 2.5—3 年。"; }
+    else if(!a[4]){ msg="<b style='color:#d98a00'>还差一步</b>：已递交申请书，但现实表现/群众基础或处分状态暂不满足，需先整改、争取无违纪且表现良好。"; }
+    else if(!a[3]){ msg="<b style='color:#2f9e57'>具备条件（非团员路径）</b>：你已递交申请书且表现良好。若已满 28 周岁或非团员，可走党员推荐/群团推优渠道；若未满 28 且非团员，建议先入团以利发展。"; }
+    else { msg="<b style='color:#2f9e57'>具备推优条件</b>：你满足 28 岁以下团员推优全部门槛，可在班级推优（每班≤2名）中争取被列为入党积极分子，进入 ≥1 年培养考察。"; }
+    r.innerHTML=msg; r.style.display='block';
+  }
+</script>
+</body>
+</html>
